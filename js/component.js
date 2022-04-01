@@ -377,9 +377,9 @@ document.addEventListener('DOMContentLoaded', () => {
         gnbList.removeClass('twoLine');
     } 
 
-    window.onpopstate = function (event) {
-        if (event.state) {
-            location.reload();
-        }
-    };
+    $(document).on("pageload",function(){
+        window.location.reload(true);
+      });
+
+    //enl
 });
