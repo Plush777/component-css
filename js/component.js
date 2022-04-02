@@ -376,10 +376,4 @@ document.addEventListener('DOMContentLoaded', () => {
     if (window.matchMedia("screen and (max-width: 1280px)").matches) {
         gnbList.removeClass('twoLine');
     } 
-
-    window.onpopstate = function(event) { 
-       var prevUrl = document.referrer; 
-       location.href= prevUrl;
-    };
-        
 });
