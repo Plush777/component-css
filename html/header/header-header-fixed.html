@@ -620,7 +620,11 @@ display: flex; align-items: center; justify-content: center; background-color: #
     </div>
   </div>
   <script>
-    $('#currentDep1,#currentDep2').addClass('active');
+    if ($('.leftArea .leftMenu > li').is('#currentDep1,#currentDep2')){
+        $('#currentDep1,#currentDep2').addClass('active');
+    } else {
+        $('#currentDep1,#currentDep2').removeClass('active');
+    }
   </script>
 </body>
 
