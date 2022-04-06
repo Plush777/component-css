@@ -17,6 +17,16 @@
 <script src="../../js/component.js"></script>
 <script src="../../js/darkmode.js" defer></script>
 <title>Component css</title>
+  <script>
+    if ($('.leftArea .leftMenu > li').is('#currentDep1,#currentDep2')){
+        $('#currentDep1,#currentDep2').addClass('active');
+    }
+    $('.leftArea .leftMenu > li').each(function(){
+        if (!$(this).is('#currentDep1,#currentDep2')){
+            $(this).removeClass('active');
+        }
+    }); 
+  </script>
 </head>
 
 <body>
@@ -619,16 +629,6 @@ display: flex; align-items: center; justify-content: center; background-color: #
       </button>
     </div>
   </div>
-  <script>
-    if ($('.leftArea .leftMenu > li').is('#currentDep1,#currentDep2')){
-        $('#currentDep1,#currentDep2').addClass('active');
-    }
-    $('.leftArea .leftMenu > li').each(function(){
-        if (!$(this).is('#currentDep1,#currentDep2')){
-            $(this).removeClass('active');
-        }
-    }); 
-  </script>
 </body>
 
 </html>
