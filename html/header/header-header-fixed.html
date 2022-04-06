@@ -625,7 +625,9 @@ display: flex; align-items: center; justify-content: center; background-color: #
     }
     $('.leftArea .leftMenu > li').each(function(){
         if (!$(this).is('#currentDep1,#currentDep2')){
-            $(this).removeClass('active');
+          if ($(this).hasClass('active')){
+                $(this).removeClass('active');
+            }
         }
     }); 
   </script>
