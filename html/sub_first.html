@@ -17,6 +17,12 @@
   <script type="text/javascript" src="../js/error.js"></script>
   <script src="../js/darkmode.js" defer></script>
   <title>Component css</title>
+  <script>
+    const fouc = (F) => {
+      F.className = F.className.replace(/\bno-display\b/, 'show-display');
+      document.documentElement = F;
+    };
+  </script>
 </head>
 
 <body>
