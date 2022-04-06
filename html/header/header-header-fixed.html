@@ -20,16 +20,6 @@
 </head>
 
 <body>
-  <script>
-    if ($('.leftArea .leftMenu > li').is('#currentDep1,#currentDep2')){
-        $('#currentDep1,#currentDep2').addClass('active');
-    }
-    $('.leftArea .leftMenu > li').each(function(){
-        if (!$(this).is('#currentDep1,#currentDep2')){
-            $(this).removeClass('active');
-        }
-    }); 
-  </script>
   <div id="wrap">
     <div id="container">
       <div class="leftArea cScroll">
@@ -629,6 +619,16 @@ display: flex; align-items: center; justify-content: center; background-color: #
       </button>
     </div>
   </div>
+  <script>
+    if ($('.leftArea .leftMenu > li').is('#currentDep1,#currentDep2')){
+        $('#currentDep1,#currentDep2').addClass('active');
+    }
+    $('.leftArea .leftMenu > li').each(function(){
+        if (!$(this).is('#currentDep1,#currentDep2')){
+            $(this).removeClass('active');
+        }
+    }); 
+  </script>
 </body>
 
 </html>
