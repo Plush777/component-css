@@ -826,9 +826,12 @@ $(function(){
   <script>
     if ($('.leftArea .leftMenu > li').is('#currentDep1,#currentDep2')){
         $('#currentDep1,#currentDep2').addClass('active');
-    } else if (!$('.leftArea .leftMenu > li').is('#currentDep1,#currentDep2')) {
-        $('.leftArea .leftMenu > li').removeClass('active');
     }
+    $('.leftArea .leftMenu > li').each(function(){
+        if (!$(this).is('#currentDep1,#currentDep2')){
+            $(this).addClass('different');
+        }
+    }); 
   </script>
 </body>
 

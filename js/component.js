@@ -377,9 +377,14 @@ document.addEventListener('DOMContentLoaded', () => {
         gnbList.removeClass('twoLine');
     } 
 
-    if ($('.leftArea .leftMenu > li').is('#currentDep1,#currentDep2')){
-        $('#currentDep1,#currentDep2').addClass('active');
-    } else if (!$('.leftArea .leftMenu > li').is('#currentDep1,#currentDep2')) {
-        $('#currentDep1,#currentDep2').removeClass('active');
-    }
+    // if (!$('.leftArea .leftMenu > li').is('#currentDep1,#currentDep2')){
+    //     $('.leftArea .leftMenu > li').addClass('different');
+    // }
+
+    //.leftArea .leftMenu > li가 #currentDep1,#currentDep2를 가지고있지 않은경우 different 클래스 추가
+    // $('.leftArea .leftMenu > li').each(function(){
+    //     if (!$(this).is('#currentDep1,#currentDep2')){
+    //         $(this).addClass('different');
+    //     }
+    // }); 
 });
