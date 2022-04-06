@@ -19,7 +19,7 @@
 <title>Component css</title>
 </head>
 
-<body>
+<body id="currentActive">
   <div id="wrap">
     <div id="container">
       <div class="leftArea cScroll">
@@ -36,7 +36,7 @@
               <a href="../../html/sub_first.html" title="홈">Home</a>
             </span>
           </li>
-          <li id="currentDep1">
+          <li class="active" id="currentDep1">
             <span>
               <a href="javascript:void(0)" title="Header">Header
                 <svg viewBox="0 0 700 700">
@@ -46,7 +46,7 @@
               </a>
             </span>
             <ul class="leftSubMenu">
-              <li id="currentDep2">
+              <li class="active" id="currentDep2">
                 <a href="../header/header-header-fixed.html" title="Header fixed">Header fixed</a>
               </li>
               <li>
@@ -619,7 +619,7 @@ display: flex; align-items: center; justify-content: center; background-color: #
       </button>
     </div>
   </div>
-  <script>
+  <!-- <script>
     if ($('.leftArea .leftMenu > li').is('#currentDep1,#currentDep2')){
         $('#currentDep1,#currentDep2').addClass('active');
     }
@@ -630,7 +630,7 @@ display: flex; align-items: center; justify-content: center; background-color: #
             }
         }
     }); 
-  </script>
+  </script> -->
 </body>
 
 </html>
