@@ -376,4 +376,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (window.matchMedia("screen and (max-width: 1280px)").matches) {
         gnbList.removeClass('twoLine');
     } 
+
+    if ($('.leftArea .leftMenu > li').is('#currentDep1,#currentDep2')){
+        $('#currentDep1,#currentDep2').addClass('active');
+    } else if (!$('.leftArea .leftMenu > li').is('#currentDep1,#currentDep2')) {
+        $('#currentDep1,#currentDep2').removeClass('active');
+    }
 });

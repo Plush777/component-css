@@ -826,8 +826,8 @@ $(function(){
   <script>
     if ($('.leftArea .leftMenu > li').is('#currentDep1,#currentDep2')){
         $('#currentDep1,#currentDep2').addClass('active');
-    } else {
-        $('.leftArea .leftMenu > li').removeClass('active');
+    } else if (!$('.leftArea .leftMenu > li').is('#currentDep1,#currentDep2')) {
+        $('#currentDep1,#currentDep2').removeClass('active');
     }
   </script>
 </body>
