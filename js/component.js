@@ -181,16 +181,17 @@ $(function () {
     });
 
     /* lnb 슬라이드토글 */
-    $('.leftArea .leftMenu > li > span').on({
+    $('.leftArea .leftMenu > li').on({
         "click": function () {
-            $(this).next('.leftSubMenu').stop().slideToggle();
-            $(this).parent('li').toggleClass('active').siblings('li').removeClass('active').find('.leftSubMenu').slideUp();
+            $(this).find('.leftSubMenu').stop().slideToggle();
+            $(this).toggleClass('active').siblings('li').removeClass('active').find('.leftSubMenu').slideUp();
         }
     });
 
     /* lnb dep3 메뉴 */
     $('.leftArea .leftMenu > li > .leftSubMenu>.dep3Cont').on({
-        "click": function () {
+        "click": function (e) {
+            e.stopImmediatePropagation();
             $(this).find('.dep3').stop().slideToggle();
             $(this).toggleClass('on').siblings('li').removeClass('on').find('.leftSubMenu').slideUp();
         }
