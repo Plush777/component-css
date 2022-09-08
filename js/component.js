@@ -68,11 +68,7 @@ $(function () {
     }
 
     if (window.matchMedia("screen and (max-width: 1280px)").matches) {
-<<<<<<< HEAD
         // console.log("해상도가 1280px 이하입니다");
-=======
-        console.log("해상도가 1280px 이하입니다");
->>>>>>> 75ad1ba17c836a5b11926c6a3df9859355cced78
         documentBody.addClass('mobileType');
     } else {
         documentBody.removeClass('mobileType');
@@ -210,8 +206,7 @@ $(function () {
         }
     });
 
-<<<<<<< HEAD
-    
+
     $('.leftArea .leftMenu > li > .leftSubMenu > li').on({
         "click": function (e) {
             e.stopPropagation();
@@ -230,14 +225,6 @@ $(function () {
             $(this).find('.dep3').stop().slideToggle();
             $(this).toggleClass('on').siblings('li').removeClass('on').find('.leftSubMenu').slideUp();
             $(this).siblings('.dep3Cont').find('.dep3').removeClass('block').css('display', 'none');
-=======
-    /* lnb dep3 메뉴 */
-    $('.leftArea .leftMenu > li > .leftSubMenu>.dep3Cont').on({
-        "click": function (e) {
-            e.stopImmediatePropagation();
-            $(this).find('.dep3').stop().slideToggle();
-            $(this).toggleClass('on').siblings('li').removeClass('on').find('.leftSubMenu').slideUp();
->>>>>>> 75ad1ba17c836a5b11926c6a3df9859355cced78
         }
     });
 
@@ -248,21 +235,13 @@ $(function () {
     /* 서브 홈버튼 */
     $(btnBack).on({
         "click": function () {
-<<<<<<< HEAD
             location.href = urlArr[0] + '/' + 'sub_first.html';
-=======
-            location.href = urlArr[0] + '/' + 'html/sub_first.html';
->>>>>>> 75ad1ba17c836a5b11926c6a3df9859355cced78
         }
     })
 
     /* 히스토리 개수 */
     historyCount = history.length;
-<<<<<<< HEAD
     // console.log("히스토리 개수는 " + historyCount + "개 입니다.");
-=======
-    console.log("히스토리 개수는 " + historyCount + "개 입니다.");
->>>>>>> 75ad1ba17c836a5b11926c6a3df9859355cced78
 
     function historyCountCheck() {
         let backArea = $('.backArea');
@@ -362,11 +341,7 @@ $(function () {
         $(document).on('keyup', function (e) {
             if (e.keyCode == 27) {
                 $('.popup.share,#dimmed').fadeOut();
-<<<<<<< HEAD
                 // console.log('esc가 감지되어 공유하기 팝업을 닫습니다.');
-=======
-                console.log('esc가 감지되어 공유하기 팝업을 닫습니다.');
->>>>>>> 75ad1ba17c836a5b11926c6a3df9859355cced78
             }
         });
     }
