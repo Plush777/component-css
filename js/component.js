@@ -206,6 +206,7 @@ $(function () {
         }
     });
 
+    
     $('.leftArea .leftMenu > li > .leftSubMenu > li').on({
         "click": function (e) {
             e.stopPropagation();
